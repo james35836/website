@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/api/dd', 'Controller@dd');
-
-Route::get('/james', 'Controller@james');

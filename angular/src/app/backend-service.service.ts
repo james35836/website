@@ -8,7 +8,5 @@ export class BackendServiceService {
   	constructor(private http: HttpClient) 
   	{
   		this.api_url = "http://website.test";
-
-  		
   	}
 }

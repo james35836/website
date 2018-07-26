@@ -1,27 +1,130 @@
+<section class="plugins">
+    <link rel="icon" href="/assets/front_assets/favicon.ico" type="image/ico" />
+    <link rel="stylesheet" type="text/css" href="/assets/front_assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/front_assets/css/styles.css" />
 
-<router-outlet></router-outlet>
-<div class="footer text-center section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="footer_img">
-                        <img src="img/footer-logo.png" alt="company logo">
-                    </div>
-                    <div class="footer_link mt-10 mb-10">
-                        <ul>
-                            <li><a class="page-scroll" href="#home">Home</a></li>
-                            <li><a class="page-scroll" href="#about">About</a></li>
-                            <li><a class="page-scroll" href="#service">Service</a></li>
-                            <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-                            <li><a class="page-scroll" href="#testimonial">Testimonial</a></li>
-                            <li><a class="page-scroll" href="#blog">Blog</a></li>
-                            <li><a class="page-scroll" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="copyright">
-                        <p>@ 2017 All Rights Reserved Avive</p>
+</section>
+<div class="main-wrapper">
+    <div class="header-wrapper header-position">
+        <header id="header" class="container-header type2">
+            <div class="top-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="top-right col-md-9 col-sm-12 col-xs-12 pull-right">
+                            <ul class="list-inline">
+                                <li class="hidden-xs">
+                                    <a href="mailto:alumni@sayidan.edu">
+                                        <span class="icon mail-icon"></span>
+                                        <span class="text">paloc_alumni@alumni.edu</span>
+                                    </a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="#">
+                                        <span class="icon phone-icon"></span>
+                                        <span class="text">+1 087 222 9</span>
+                                    </a>
+                                </li>
+                                <li class="top-search">
+                                    <form class="navbar-form search no-margin no-padding">
+                                        <input type="text" name="q" class="form-control input-search" placeholder="search..." autocomplete="off">
+                                        <button type="submit" class="lnr lnr-magnifier"></button>
+                                    </form>
+                                </li>
+                                <li class="login">
+                                    <a [routerLink]="['/login']" href="javascript:void(0)">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="header-middle">
+                <div class="container">
+                    <div class="logo hidden-sm hidden-xs">
+                        <a href="#"> <img src="/assets/front_assets/images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul class="nav navbar-nav">
+                                <li><a [routerLink]="['/home']" href="javascript:void(0)">HOME</a></li>
+                                <li><a [routerLink]="['/about']" href="javascript:void(0)">ABOUT US</a></li>
+                                <li><a [routerLink]="['/program']" href="javascript:void(0)">PROGRAM &amp; EVENTS</a></li>
+                                <li><a [routerLink]="['/alumni']" href="javascript:void(0)">ALUMNI STORY</a></li>
+                                <li><a [routerLink]="['/carrer']" href="javascript:void(0)">CAREER OPPORTUNITY</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="area-mobile-content visible-sm visible-xs">
+                        <div class="logo-mobile">
+                            <a href="#"> <img src="/assets/front_assets/images/logo-small.png" alt="logo"></a>
+                        </div>
+                        <div class="mobile-menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
+    <router-outlet></router-outlet>
+    <div class="footer-wrapper type2">
+        <footer class="foooter-container">
+            <div class="container">
+                <div class="footer-middle">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-xs-12 animated footer-col">
+                            <div class="contact-footer">
+                                <div class="logo-footer">
+                                    <a href="homepage-1.html"><img src="/assets/front_assets/images/logo-footer.png" alt=""></a>
+                                </div>
+                                <div class="contact-desc">
+                                    <p class="text-light">Paloc Elementaray School, Plaoc Maragusan Comval</p>
+                                </div>
+                                <div class="contact-phone-email">
+                                    <span class="contact-phone"><a href="#">+63987654321</a></span>
+                                    <span class="contact-email"><a href="#">paloc_alumni@alumni.edu</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12  col-xs-12 animated footer-col">
+                            <div class="links-footer">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <h6 class="heading-bold">WEB PAGE</h6>
+                                        <ul class="list-unstyled no-margin">
+                                            <li><a [routerLink]="['/home']" href="javascript:void(0)">HOME</a></li>
+                                            <li><a [routerLink]="['/about']" href="javascript:void(0)">ABOUT US</a></li>
+                                            <li><a [routerLink]="['/program']" href="javascript:void(0)">PROGRAM &amp; EVENTS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <ul class="list-unstyled no-margin">
+                                            <li><a [routerLink]="['/alumni']" href="javascript:void(0)">ALUMNI STORY</a></li>
+                                            <li><a [routerLink]="['/carrer']" href="javascript:void(0)">CAREER OPPORTUNITY</a></li>
+                                        </ul>
+                                    </div>
+                                
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 animated footer-col">
+                            <div class="links-social">
+                                <div class="login-dashboard">
+                                    <a [routerLink]="['/register']" href="javascript:void(0)" class="bg-color-theme text-center text-regular">CREATE ACCOUNT</a>
+                                </div>
+                                <ul class="list-inline text-center">
+                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom text-center">
+                    <p class="copyright text-light">©2018 Alumni Association of Paloc Elementary School</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
