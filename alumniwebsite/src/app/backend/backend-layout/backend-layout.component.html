@@ -1,0 +1,171 @@
+
+<nav class="fixed-top navbar navbar-expand-md navbar-dark bg-primary">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="#">
+		<img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+		<span class="menu-collapsed">&nbsp;&nbsp;&nbsp;PES ALUMNI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	</a>
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav">
+			<li class="nav-item" data-toggle="sidebar-colapse" style="padding-top: 5px;">
+				<i class="fas fa-bars collapse-top-icon"></i>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			</li>
+			<li class="nav-item dropdown d-sm-block d-md-none">
+				<a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Menu
+				</a>
+				<div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+					<a class="dropdown-item" href="#">Dashboard</a>
+					<a class="dropdown-item" href="#">Profile</a>
+					<a class="dropdown-item" href="#">Tasks</a>
+					<a class="dropdown-item" href="#">Etc ...</a>
+				</div>
+			</li>
+		</ul>
+		<ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <img class="user-img" src="/assets/backend/image/profile.jpg" alt="" data-toggle="dropdown">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fas fa-sign-out-alt"></i>&nbsp;&nbsp;LOGOUT</a>
+        </li>
+        
+    </ul>
+	</div>
+</nav>
+<div class="row" id="body-row">
+	<div id="sidebar-container" class="d-none d-md-block sidebar-expanded"><!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+		<ul class="list-group">
+			<div class="user-profile-holder">
+				<img class="user-img-uncollapse img-display" src="/assets/backend/image/profile.jpg" alt="" data-toggle="dropdown">
+				
+			</div>
+			<!-- <div class="user-text-holder">
+				<p>JAMES OMOSORA</p>	
+			</div> -->
+			<li class="list-group-item sidebar-separator-title text-muted align-items-center menu-collapsed d-flex">
+				<small>MAIN MENU</small>
+			</li>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+					<span class="menu-collapsed">DASHBOARD</span>
+				</div>
+			</a>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-heartbeat fa-fw mr-3"></span>
+					<span class="menu-collapsed">NEWS FEED</span>
+				</div>
+			</a>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-info-circle fa-fw mr-3"></span>
+					<span class="menu-collapsed"> ANNOUNCEMENT</span>
+				</div>
+			</a>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="far fa-calendar-alt fa-fw mr-3"></span>
+					<span class="menu-collapsed">ALUMNI EVENTS</span>
+				</div>
+			</a>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-map-marked-alt fa-fw mr-3"></span>
+					<span class="menu-collapsed">ALUMNI NEARBY</span>
+				</div>
+			</a>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-sitemap fa-fw mr-3"></span>
+					<span class="menu-collapsed">ALUMNI DIRECTORY</span>
+				</div>
+			</a>
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-compass fa-fw mr-3"></span>
+					<span class="menu-collapsed">FACULTY DIRECTORY</span>
+				</div>
+			</a>
+			
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-envelope-square fa-fw mr-3"></span>
+					<span class="menu-collapsed">GROUP CHAT <span class="badge badge-pill badge-primary ml-2">5</span></span>
+				</div>
+			</a>
+			<a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start collapsed">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fas fa-cogs fa-fw mr-3"></span>
+					<span class="menu-collapsed">MAINTENANCE</span>
+					<span class="submenu-icon ml-auto"></span>
+				</div>
+			</a>
+				<!-- Submenu content -->
+			<div id="submenu2" class="collapse sidebar-submenu">
+				<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="list-group-item list-group-item-action bg-dark text-white">
+					<span class="menu-collapsed">MANAGE USER</span>
+				</a>
+				<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="list-group-item list-group-item-action bg-dark text-white">
+					<span class="menu-collapsed">POST ANNOUNCEMENT</span>
+				</a>
+				<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="list-group-item list-group-item-action bg-dark text-white">
+					<span class="menu-collapsed">POST EVENTS</span>
+				</a>
+				<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="list-group-item list-group-item-action bg-dark text-white">
+					<span class="menu-collapsed">POST JOBS</span>
+				</a>
+			</div>
+			
+			<!-- Separator with title -->
+			<li class="list-group-item sidebar-separator-title text-muted align-items-center menu-collapsed d-flex">
+				<small>OPTIONS</small>
+			</li>
+			<!-- /END Separator -->
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fa fa-calendar fa-fw mr-3"></span>
+					<span class="menu-collapsed">Calendar</span>
+				</div>
+			</a>
+			
+			<!-- Separator without title -->
+			<li class="list-group-item sidebar-separator menu-collapsed"></li>
+			<!-- /END Separator -->
+			<a [routerLink]="['/dashboard']" href="javascript:void(0)" class="bg-dark list-group-item list-group-item-action">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span class="fa fa-question fa-fw mr-3"></span>
+					<span class="menu-collapsed">Help</span>
+				</div>
+			</a>
+			<a href="javascript:void(0)" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+				<div class="d-flex w-100 justify-content-start align-items-center">
+					<span id="collapse-icon" class="fa fa-2x mr-3 fa-angle-double-left"></span>
+					<span id="collapse-text" class="menu-collapsed">Collapse</span>
+				</div>
+			</a>
+		</ul>
+	</div>
+	<div class="col">
+		
+            <h5>DASHBOARD<small class="text-muted">CENTER</small></h5>
+            <ol class="breadcrumb">
+                <li><a href="/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            </ol>
+        
+        <router-outlet></router-outlet>
+	</div>
+		
+</div>
